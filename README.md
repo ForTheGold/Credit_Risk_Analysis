@@ -35,7 +35,7 @@ We have the same problem with Combination sampling.  This method is about 64% ac
 
 Balanced Random Forest Classifier
 
-
+![Balanced Random Forest Classifier](https://github.com/ForTheGold/Credit_Risk_Analysis/blob/main/Resources/BalancedRandomForestClassifier.png)
 
 This model is much improved with an accuracy of about 74%.  There are still many false negatives, but it is a great deal less at just over 2000.  Our precision and accuracy scores for the category have increased dramatically.
 
