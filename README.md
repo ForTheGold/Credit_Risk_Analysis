@@ -12,25 +12,25 @@ Banks have traditionally relied on credit scores, income and collateral assets t
 
 * Naive Random Oversampling
 
-(https://github.com/ForTheGold/Credit_Risk_Analysis/blob/main/Resources/NaiveRandomOversampling.png)
+![Naive Random Oversampling](https://github.com/ForTheGold/Credit_Risk_Analysis/blob/main/Resources/NaiveRandomOversampling.png)
 
 As you can see, we did not achieve a terrible score here, but it is not really that great either.  Only about 65% of our predictions will be correct.  Our main problem is that we have classified far too many loan applicants as low risk when they are in fact high risk.  We have nearly 7000 false negatives.  We can see that our precision is extremely low with finding high risk applicants.
 
 * SMOTE Oversampling
 
-(https://github.com/ForTheGold/Credit_Risk_Analysis/blob/main/Resources/SMOTEOversampling.png)
+![SMOTE Oversampling](https://github.com/ForTheGold/Credit_Risk_Analysis/blob/main/Resources/SMOTEOversampling.png)
 
 This method gave us nearly the same results with about 66% accuracy.  It has the same issue of identifying far too many loan applicants that are high risk as low risk.  Here there are over 5000 false negatives leading to a low precision and f1 score for that category.
 
 * Undersampling
 
-(https://github.com/ForTheGold/Credit_Risk_Analysis/blob/main/Resources/Undersampling.png)
+![Undersampling](https://github.com/ForTheGold/Credit_Risk_Analysis/blob/main/Resources/Undersampling.png)
 
 Undersampling has produced an even worse result with only 54% of the applications being identified correctly.  The problem is the same that we have a huge number of false negatives.  This time the number is over 10,000 which is excessive.  This also leaves us with a low precision and f1 score for the high risk category.
 
 * Combination Sampling
 
-(https://github.com/ForTheGold/Credit_Risk_Analysis/blob/main/Resources/CombinationSampling.png)
+![Combination Sampling](https://github.com/ForTheGold/Credit_Risk_Analysis/blob/main/Resources/CombinationSampling.png)
 
 We have the same problem with Combination sampling.  This method is about 64% accurate with a huge number of false negatives at over 7000.  This again leads to low precision and f1 scores.
 
@@ -42,7 +42,7 @@ This model is much improved with an accuracy of about 74%.  There are still many
 
 * Easy Ensemble Adaboost Classifier
 
-(https://github.com/ForTheGold/Credit_Risk_Analysis/blob/main/Resources/EasyEnsembleAdaboostClassifier.png)
+![Easy Ensemble Adaboost Classifier](https://github.com/ForTheGold/Credit_Risk_Analysis/blob/main/Resources/EasyEnsembleAdaboostClassifier.png)
 
 This is by far the best classifier at 93% accuracy.  The model has classified less than 1000 of the applicants as high risk incorrectly which leads to a great deal of improvement in our precision and f1 scores.
 
